@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' , sans-serif;
+}
+.cs1{
+    width: 100%;
+    height: 100vh;
+    background-image:url(ru\ photos/Front-View.png);
+    background-position: center;
+    background-size: cover;
+    padding-right: 8%;
+    padding-left: 8%;
+    box-sizing: border-box;
+}
+.cs-navbar{
+    height: 12%;
+    display:flex ;
+align-items: center;
+
+
+
+}
+.cs-logo{
+    width: 90px;
+    cursor: pointer;
+}
+.cs-menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+.cs-navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+.cs-navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: aquamarine;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.cs-navbar ul li:hover::after{
+    width: 100%;
+}
+.cs-navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size:13px ;
+}
+.cs-row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.cs-col{
+   flex-basis: 50%; 
+}
+h1{
+    color: #fff;
+    font-size: 70px;
+}
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height:15px ;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.cs-card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(ru\ photos/background02.png);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.8s;
+}
+.cs-card1{
+    background-image: url(ru\ photos/back01.png);
+}
+.cs-card2{
+    background-image: url(ru\ photos/Vcfront.png);
+}
+.cs-card3{
+    background-image: url(ru\ photos/307604649_1140818889853197_8228761202015352402_n.png);
+}
+.cs-card4{
+    background-image: url(ru\ photos/background02.png);
+}
+.cs-card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: black;
+    text-shadow: 0 0 5px #999;
+
+}
+.cs-card p{
+    text-shadow: 0 0 5px #999;
+    font-size: 8px;
+    color: black;
+}
+@media(max-width: 500px){
+    .cs-col h1{
+        font-size: 62px;
+    }
+    .cs-navbar ul li{
+        display: block;
+    }
+    .cs-navbar{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+
+}

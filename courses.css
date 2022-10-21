@@ -1,0 +1,359 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.cs1{
+  width: 100%;
+  height: 100vh;
+  background-image:url(ru\ photos/Front-View.png);
+  background-position: center;
+  background-size: cover;
+  padding-right: 8%;
+  padding-left: 8%;
+  box-sizing: border-box;
+}
+.cs-navbar{
+  height: 12%;
+  display:flex ;
+align-items: center;
+
+
+
+}
+.cs-logo{
+  width: 60px;
+  cursor: pointer;
+}
+.cs-menu-icon{
+  width: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+
+}
+.cs-navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+.cs-navbar ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.cs-navbar ul li:hover::after{
+  width: 100%;
+}
+.cs-navbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-size:14px ;
+  font-style: bold;
+}
+.cs-row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.cs-col{
+ flex-basis: 50%; 
+}
+.cs-col h1{
+  color: #fff;
+  font-size: 70px;
+}
+.cs-col p{
+  color: #fff;
+  font-size: 11px;
+  line-height:15px ;
+}
+.cs-col button{
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+.cs-card{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-image: url(ru\ photos/background02.png);
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.8s;
+}
+.cs-card1{
+  background-image: url(image\ slider/1666286725265);
+}
+.cs-card2{
+  background-image: url(ru\ photos/Vcfront.png);
+}
+.cs-card3{
+  background-image: url(ru\ photos/307604649_1140818889853197_8228761202015352402_n.png);
+}
+.cs-card4{
+  background-image: url(ru\ photos/background02.png);
+}
+.cs-card:hover{
+  transform: translateY(-10px);
+}
+.cs-card h5{
+  color: black;
+  text-shadow: 0 0 5px #999;
+
+}
+.cs-card p{
+  text-shadow: 0 0 5px #999;
+  font-size: 8px;
+  color: black;
+}
+@media(max-width: 500px){
+  .cs-col h1{
+      font-size: 62px;
+  }
+  .cs-navbar ul li{
+      display: block;
+  }
+  .cs-navbar{
+      position: fixed;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+  }
+  nav .fa{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  
+
+}
+/* _______________course___________ */
+.course{
+  
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+#text{
+  text-align: left;
+  font-size: 40px;
+  font-style: oblique;
+  /* border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  background-color: wheat; */
+}
+.row{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  color:black;
+}
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img{
+  width: 100%;
+  margin-top: 80px;
+  border-radius: 20px;
+  box-shadow: 20px 10px 10px #555;
+}
+
+.about-col h1{
+  padding-top: 0;
+  font-style: oblique;
+  color: Green;
+}
+.about-col p{
+  padding: 15px 0 25px;
+  text-align: justify;
+}
+.red-btn{
+  border: 1px solid #f44336;
+  background:transparent;
+  color: #f44336;
+}
+.red-btn:hover{
+  color: #fff;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+color: black;
+font-size: 15px;
+font-style: oblique;
+font-weight: bold;
+border: 3px solid black;
+padding: 5px 7px;
+background: transparent;
+border-radius: 10px;
+position: relative;
+cursor: pointer;
+transition: background 0.5s;
+background-color: blue;
+}
+.hero-btn:hover{
+  border: 1px solid #f27250;
+  transition: 2s;
+}
+
+@media(max-width: 700px){
+  .row{
+      flex-direction: column;
+  }
+}
+
+/* ______________downloas-section_________________ */
+.download-section{
+  font-family: sans-serif;
+}
+.table-container{
+  padding: 10px 0%;
+  margin: 10px auto 0;
+}
+.heading{
+  font-size: 40px;
+  text-align: center;
+  color: #f1f1f1;
+}
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead{
+  background-color: black;
+}
+.table thead tr th{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: #FFFFFF;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid white;
+}
+.table tbody tr td{
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: black;
+  background-color: white;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+}
+.table .text_open{
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.35px;
+  color: #FF1046;
+}
+.table tbody tr td .btn{
+  width: 130px;
+  text-decoration: none;
+  line-height: 35px;
+  display: inline-block;
+  background-color: red;
+  font-weight: bold;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 14px;
+  opacity: 2;
+
+
+}
+@media (max-width:768px){
+  .table thead{
+    display: none;
+  }
+  .table, .table tbody, .table tr,.table td{
+    display: block;
+    width: 100%;
+  }
+  .table tr{
+    margin-bottom: 15px;
+  }
+  .table tbody tr td{
+    text-align: right;
+    padding-left: 10%;
+    position: relative;
+  }
+  .table td:before{
+content: attr(data-lable);
+position: absolute;
+left: 0;
+width: 50%;
+padding-left: 10px;
+font-weight: 600;
+font-size: 14px;
+text-align: left;
+  }
+}
+/* -----footer------ */
+.footer{
+  width:100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color:  rgb(180, 243, 175);
+  border-radius: 20px;
+}
+.footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icon .fa{
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.fa-heart-o{
+  color: #f44336;
+}
+.sub-header{
+  height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.sub-header h1{
+  margin-top: 100px;
+}
+

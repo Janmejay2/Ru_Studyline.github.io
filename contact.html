@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ru_Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+        <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ________________header__________________ -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="ru photos/logo-test.png" </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="courses.html">COURSE</a></li>
+                        <li><a href="media.html">MEDIA</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- -------------contact us------------ -->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.9040410419934!2d85.89591571442593!3d20.469134086304244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190d7cec42be69%3A0x7c03c2386710b6f9!2sMunicipal%20Colony%2C%20Cuttack%2C%20Odisha%20753003!5e0!3m2!1sen!2sin!4v1665874110338!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="container">
+      <span class="big-circle"></span>
+      <img src="ru photos/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text"> 
+        Hi, i am janmejay for any Query contact us!. We will try to resolve it. 
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="ru photos/location.png" class="icon" alt="" />
+              <p>Vijaya Hotel,College Square, Cuttack</p>
+            </div>
+            <div class="information">
+              <img src="ru photos/email.png" class="icon" alt="" />
+              <p>mail.janmejay6@gmail.comm.com</p>
+            </div>
+            <div class="information">
+              <img src="ru photos/phone.png" class="icon" alt="" />
+              <p>+91-7077227961</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -------------------------Footer-------------- -->
+
+
+    <section class="footer-ft">
+
+        <h4>About Us</h4>
+        <p>Thankyou  for visiting and experiancing the website. We hope your time will not be wasted. For any query or improvement send us an email.</p>
+        <div class="icons-ft">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+        <p>Made with<i class="fa fa-heart-o-ft"></i> by Ru_Media</p>
+    </section>
+
+
+    <!-- JavaScript for Togglr Menu -->
+    <script>
+        var navLinks = document.getElement-ById("navLinks");
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
